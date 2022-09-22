@@ -28,6 +28,7 @@ stage('ExecuteSOnarQubeReport'){
 sh "mvn  sonar:sonar"
 }
 
+
 stage('UploadArtifactsIntoNexusRepo'){
 sh "mvn deploy"
 }
